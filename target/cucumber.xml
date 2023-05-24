@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.017" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Loginto demo commerce" name="validate Login" time="18.814">
+<system-out><![CDATA[
+Given user enter "admin@yourstore.com" text into "Email"....................passed
+When user enter "admin" text into "Password"................................passed
+When user click on "Log in".................................................passed
+And user click on "Catalog".................................................passed
+And user click on "Products"................................................passed
+Then assert "Products" is displayed in header...............................passed
+When user enter "Build your own computer" text into "SearchProductName".....passed
+And user click on "Product type" dropdown...................................passed
+And user click on "Simple"..................................................passed
+And user click on "search-products" button..................................passed
+Then assert "Build your own computer" is displayed in section Learn more about "products".passed
+When user enter "Samsung Series 9 NP900X4C Premium Ultrabook" text into "SearchProductName".passed
+And user click on "Categories"..............................................passed
+Then assert "Categories" is displayed in header.............................passed
+When user enter "Apparel" text into "SearchCategoryName"....................passed
+And user click on "Published" dropdown......................................passed
+And user click on "Published only"..........................................passed
+And user click on "search-categories" button................................passed
+Then assert "Apparel" is displayed in section Learn more about "categories".passed
+And user click on "Manufacturers"...........................................passed
+Then assert "Manufacturers" is displayed in header..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
