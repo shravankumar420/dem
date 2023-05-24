@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features", glue = "stepDefinitions", dryRun = false, monochrome = true,
-		tags = "@SmokeTest",
+		tags = "@SmokeTest or @Demo",
 		plugin = { "pretty", "html:target/cucumber.html", "json:target/cucumber.json", "junit:target/cucumber.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed_scenarios.txt" })
